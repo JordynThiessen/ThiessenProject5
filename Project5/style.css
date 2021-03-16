@@ -1,0 +1,111 @@
+header, nav, main, footer, aside {display: block;}
+*{box-sizing: border-box;}
+header {background-color: #869dc7;
+        height: 110px;
+        width: 100%;
+        background-size: contain;
+        margin-bottom: 0px;
+        background-image: url(JordynsMetalModelsHeaderwtext.jpeg);
+}
+h1 {text-align: center;
+    margin-top: 0;
+	font-size: 3em;
+    vertical-align: middle;
+}
+#mediatext {display: none;
+            font-size: 40px;
+            text-shadow: 2px 2px 2px #000000;
+}
+#wrapper {margin: 0 auto;
+		 width: 90%;
+         min-width: 960px;
+         max-width: 1200px;
+		 background-color: #ffffff;
+		 }
+nav {margin-top: 5px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    float: left;
+    width: 200px;
+}
+nav ul {list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+}
+nav a {text-decoration: none;
+	  font-size: 1.2em;
+      background-color: #b3c7e6;
+	  border-bottom: 1px solid #eeeeee;
+      padding: 20px;
+      display: block;
+}
+nav a:link{color:#006600;}
+nav a:visited{color:#003300;}
+nav a:focus, nav a:hover{color: #cc66cc;}
+nav a:active{color: #000000;}
+
+nav img {margin-top: 10px;}
+
+aside {float: right;
+	 width: 200px;
+
+}
+main {background-color: #ffffff;
+	 color: #000000;
+	 padding: 20px 20px;
+     overflow: auto;
+	 }
+main ul{list-style-type: none;}
+main li{ display: inline-block;
+	  width: 225px;
+	  padding-bottom: 10px;
+	  margin: 10px;
+	  background-color: #eaeaea;
+	  text-align: center;
+	  font-style: italic;
+	  font-family: Georgia, serif;
+	}
+main p {text-indent: 50px;}
+footer {font-size: .70em;
+       font-style: italic;
+	   text-align: center;
+	   background-color: #AEC3E3;
+	   padding: 1em;   
+}
+#footer {
+          position: absolute;
+          bottom: 0;
+         }
+aside h3 {padding-bottom: 2px;
+		border-bottom: 1px solid #000000;
+		margin: 10px;
+		font-size: 0.90em;
+		color: #000000;
+}
+.news {font-size: 0.80em;
+	   margin: 10px;
+}
+@media only screen and (max-width: 1024px) {
+            main {margin: 0px;}
+			body {margin: 0px;}
+			#wrapper {min-width: auto;}
+			nav {float: none; width: auto;}
+			aside {float: none; width: auto;}
+			nav li {display: inline-block; padding: 0.5em;}
+			nav ul {text-align: center;}
+			h1, h2, h3 {font-size: 120%;}
+			p {font-size: 90%;}
+			nav img {display: none;}
+    header {display: none;}
+    #mediatext {display: block;}
+}
+@media only screen and (max-width: 768px){
+			#wrapper {min-width: auto;}
+			h1, h2, h3 {font-size: 100%;}
+			p, .news {font-size: 80%;}
+			nav, nav ul, nav li {padding: 0px;}
+			nav li {display: block;}
+			nav a {display: block;
+						padding: 0.5em 0;
+						border-bottom: 2px ridge #00005d;}
+}
